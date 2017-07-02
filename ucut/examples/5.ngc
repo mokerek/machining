@@ -1,0 +1,36 @@
+
+(Absolute distance mode)
+G90
+(Program coordiantes are mm)
+G21
+(XY plane select)
+G17
+(Set feedrate)
+F60.00
+
+(Move to lower left corner)
+G0 Z1
+G0 X-20.25 Y0.00
+
+(pass 1, cutting at -2.00 deep)
+G1 Z-2.00
+G1 X-20.25 Y17.20
+G1 X20.25 Y17.20
+G1 X20.25 Y0.00
+G0 Z1
+(Move to lower left corner)
+G0 X-20.25 Y0.00
+
+(pass 1, cutting at -4.00 deep)
+G1 Z-4.00
+G1 X-20.25 Y17.20
+G1 X20.25 Y17.20
+G1 X20.25 Y0.00
+G0 Z1
+(Move to lower left corner)
+G0 X-20.25 Y0.00
+
+(Move mill to safe height)
+G0 Z10
+(End of program)
+M2
